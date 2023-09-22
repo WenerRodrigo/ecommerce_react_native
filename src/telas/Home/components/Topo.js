@@ -5,9 +5,17 @@ import logo from '../../../assets/logo.png'
 
 
 class Topo extends React.Component {
+    state = {
+        topo: {
+            boasVindas: "",
+            legenda: "",
+        }
+    }
+
+
     atualizaTopo() {
         const retorno = carregaTopo();
-        console.log(retorno)
+        this.setState({ topo: retorno });
     }
     componentDidMount() {
         atualizaTopo();
@@ -16,8 +24,8 @@ class Topo extends React.Component {
     render() {
         return <View styles={estilos.topo}>
             <Image style={estilos.imagem} source={logo} />
-            <Text style={estilos.boasVindas}>Olá Wener</Text>
-            <Text style={estilos.legenda}>Encontre os melhores produtores</Text>
+            <Text style={estilos.boasVindas}>{ this.state.topo.boasVindas}</Text>
+            <Text style={estilos.legenda}>{ this.state.topo.legenda }</Text>
         </View>
     }
 }
@@ -37,10 +45,12 @@ const estilos = StyleSheet.create({
         fontSize: 26,
         lineHeight: 42,
         fontWeight: "bold",
+        color: '#464646'
     },
     legenda: {
         fontSize: 16,
         lineHeight: 26,
+        color: '#A3A3A3'
     }
 })
 
