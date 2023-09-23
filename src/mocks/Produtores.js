@@ -15,31 +15,31 @@ const produtores = {
         {
             nome: "Green",
             imagem: green,
-            distancia: `${gerarNumeroAleatorio(1, 500)}m`,
+            distancia: `${gerarNumeroAleatorio(1, 500)}`,
             estrelas: gerarNumeroAleatorio(1, 5)
         },
         {
             nome: "Salad",
             imagem: Salad,
-            distancia: `${gerarNumeroAleatorio(1, 500)}m`,
+            distancia: `${gerarNumeroAleatorio(1, 500)}`,
             estrelas: gerarNumeroAleatorio(1, 5)
         },
         {
             nome: "grow",
             imagem: grow,
-            distancia: `${gerarNumeroAleatorio(1, 500)}m`,
+            distancia: `${gerarNumeroAleatorio(1, 500)}`,
             estrelas: gerarNumeroAleatorio(1, 5)
         },
         {
             nome: "jennyJack",
             imagem: jennyJack,
-            distancia: `${gerarNumeroAleatorio(1, 500)}m`,
+            distancia: `${gerarNumeroAleatorio(1, 500)}`,
             estrelas: gerarNumeroAleatorio(1, 5)
         },
         {
             nome: "potager",
             imagem: potager,
-            distancia: `${gerarNumeroAleatorio(1, 500)}m`,
+            distancia: `${gerarNumeroAleatorio(1, 500)}`,
             estrelas: gerarNumeroAleatorio(1, 5)
         },
     ]
